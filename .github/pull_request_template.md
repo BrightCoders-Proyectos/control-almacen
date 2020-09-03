@@ -19,4 +19,4 @@ model, table, controller and test. For more background, see ticket #JIRA-123.
   - I've added coverage for testing all new methods. I used Faker for a few random user emails and names.
   
   ## Screenshots 
-  If applicable
+If applicable, include screenshots of the results or screenshots that help to see changes
