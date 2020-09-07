@@ -1,6 +1,6 @@
 # Consume Local
 
-Directorio digital de punto de venta de comida, productos o servicios
+Directorio digital de puntos de venta de comida, productos o servicios
 
 ## Diseño base
  
