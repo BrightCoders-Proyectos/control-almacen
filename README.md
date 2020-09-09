@@ -35,6 +35,7 @@ El siguiente es un listado **no exahustivo** de requerimientos funcionales:
   - Departamento
   - Clave (encriptada)
   - Todos los campos son requeridos
+  - Importar de Hoja de cálculo o CSV
 
 - Catálogo de almacenes (CRUD)
   - Código de identificación
@@ -47,6 +48,7 @@ El siguiente es un listado **no exahustivo** de requerimientos funcionales:
   - Nombre
   - Almacen (id-almacen)
   - Estado (alta, baja, etc.)
+  - Importar de Hoja de cálculo o CSV
   
 - Eventos (préstamos)
   - Salida
