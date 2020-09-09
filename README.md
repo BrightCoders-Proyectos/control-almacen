@@ -63,9 +63,35 @@ El siguiente es un listado **no exahustivo** de requerimientos funcionales:
     - Observaciones. Observaciones al momento de realizar la entrada a almacen.
     
 - Backend API
- - Eventos. Funciones necesarias para entrada y salida de artículos
- - Usuarios. Solo consulta o autenticación
- - Almacenes. Solo consultas
- - Inventario. Solo consultas
+  - Eventos. Funciones necesarias para entrada y salida de artículos
+  - Usuarios. Solo consulta o autenticación
+  - Almacenes. Solo consultas
+  - Inventario. Solo consultas
+  
+## Requerimientos no-funcionales
+- Rendimiento y escalabilidad
+  - [Capáz de escalar de manera horizontal](https://rubygarage.org/blog/ruby-on-rails-is-scalable)
+  - [Aplicar la metodología de los 12 Factores](https://12factor.net/)
+  - Respuesta del servidor menor a los 200ms. 
+- Seguridad
+  - Cubrir las Top 10 vulnerabilidades OWASP (Opcional)
+     - [OWASP Top ten](https://owasp.org/www-project-top-ten/)
+     - [OWSAP Ruby on Rails Cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/Ruby_on_Rails_Cheat_Sheet.html)
+- Calidad
+  - Utilizar estilo de código definido por la comunidad (apoyarse en Rubocop)
+  - Pruebas unitarias
+  - Puntuación en Rubycritic: por lo menos 95 en la carpeta de la App y por lo menos 65 en la carpeta de pruebas
+  - Utilizar SandiMeter para analizar el código y utilizar el resultado para hacer mejoras
+  - Utilizar Cypress para pruebas de integración
+  - Presentación correcta en las versiones más recientes de los principales navegadores: Edge, Chrome, Safari y Firefox
+  - [Configuración de un servidor de integración continua como Travis CI o Circle CI](https://circleci.com/features/ruby/)
+
+## Tecnologías
+- Ruby on Rails en el backend
+- PostgreSQL como base de datos principal
+- Heroku para hospedar la App
+- La versión más reciente de Bootsrap  y [bootstrap_form](https://github.com/bootstrap-ruby/bootstrap_form) para tus formularios
+- Javascript: libertad para utilizar cualquier framework o librería, preferentemente sin jQuery
+- Framework para pruebas [Rspec](https://rspec.info/) ó [Minitest](https://github.com/seattlerb/minitest)
 
   
