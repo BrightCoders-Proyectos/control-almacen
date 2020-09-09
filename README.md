@@ -70,6 +70,18 @@ El siguiente es un listado **no exahustivo** de requerimientos funcionales:
   - Almacenes. Solo consultas
   - Inventario. Solo consultas
   
+## Diseño
+No hay un diseño inicial pero la aplicación deberá ser responsiva (escritorio, web y móvil) y en su interfaz considerar los siguientes elementos
+
+- Top bar
+- Navbar / Menú
+- Usuario (perfil, iniciar, cerrar sesión)
+- Content
+- Footer
+
+### Colores
+Debe considerar el uso de un esquema de colores de tal forma que pueda personalizarse el tema (colores) de la App
+  
 ## Requerimientos no-funcionales
 - Rendimiento y escalabilidad
   - [Capáz de escalar de manera horizontal](https://rubygarage.org/blog/ruby-on-rails-is-scalable)
