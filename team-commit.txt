@@ -1,0 +1,18 @@
+########50 characters############################
+Subject
+
+########72 characters##################################################
+Problem
+# Problem, Task, Reason for CommitSolution
+
+# Solution or List of ChangesNote
+
+# Special instructions, testing steps, rake, etc
+
+
+Co-authored-by: alx1313 <alx2406@hotmail.com>
+Co-authored-by: CarlosSe <carlos.seggch@gmail.com>
+Co-authored-by: jorge27 <ja.garciavega@outlook.com>
+Co-authored-by: DiegoFigueroa98 <16460315@colima.tecnm.mx>
+Co-authored-by: pacheco-andres <andrespach4@gmail.com>
+Co-authored-by: psantollo <psantollo@ucol.mx>

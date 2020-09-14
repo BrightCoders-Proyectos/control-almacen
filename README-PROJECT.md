@@ -109,10 +109,3 @@ Debe considerar el uso de un esquema de colores de tal forma que pueda personali
 - Framework para pruebas [Rspec](https://rspec.info/) ó [Minitest](https://github.com/seattlerb/minitest)
 
   
-## Instalación
-Para poder instalar el proyecto en su ambiente local, después de clonar el repositorio, se debe de executar los dos commandos siguentes: 
-
-```sh
-$ bundle install
-$ yarn --check-files
-```
