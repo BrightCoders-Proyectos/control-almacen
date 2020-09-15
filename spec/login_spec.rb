@@ -20,4 +20,17 @@ feature 'User try to login' do
 
     expect(page).to have_content('Invalid Email or password.')
   end
+
+  feature 'User seccesfully login' do
+    scenario 'See the home page when the user is login in' do
+      user = FactoryBot.create(:user)
+      visit new_user_session_path
+  
+      fill_in 'Email', with: user.email
+      fill_in 'Password', with: user.password
+      click_button 'Log in'
+
+      expect(page).to have_content('Signed in successfully.')
+    end
+  end
 end
