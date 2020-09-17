@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ControlAlmacen</title>
+    <title>Control Almacen</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,11 +10,10 @@
   </head>
 
   <body>
-    <% if !notice.nil? %>
-      <p class="notice"><%= notice %></p>
-    <% end %>
-    <% if !alert.nil? %>
-    <p class="alert"><%= alert %></p>
+    <% flash.each do |type, msg| %>
+      <div class="<%= flash_class(type) %>">
+        <%= msg %>
+      </div>
     <% end %>
     <%= yield %>
   </body>

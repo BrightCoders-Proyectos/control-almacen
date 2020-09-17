@@ -4,8 +4,8 @@
             <div class="form-container">
                 <%= image_tag 'login-img.png', class: "mx-auto d-block img-fluid" %>
                 <hr>
-                  <% flash.each do |type, msg| %>
-                  <div class="alert alert-info">
+                <% flash.each do |type, msg| %>
+                  <div class="<%= flash_class(type) %>">
                     <%= msg %>
                   </div>
                 <% end %>
@@ -13,7 +13,7 @@
                 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
                 <div class="field">
                   <%= f.label :email %><br />
-                  <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control mb-2', required: true %>
+                  <%= f.text_field :email, autofocus: true, autocomplete: "email", class: 'form-control mb-2', required: true %>
                 </div>
 
                 <div class="field">
@@ -35,7 +35,7 @@
 
               <%= render "devise/shared/links" %>
             </div>
-            <div class="img-container"></div>
+            <div class="side-image"></div>
         </div>
     </div>
 </div>
