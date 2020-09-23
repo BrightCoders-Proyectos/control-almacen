@@ -19,6 +19,7 @@ require 'rails_helper'
       click_button 'Log in'
 
       expect(page).to have_content('Invalid Email or password.')
+    end
   end
 
   feature 'User seccesfully login' do
@@ -33,4 +34,3 @@ require 'rails_helper'
       expect(page).to have_content('Signed in successfully.')
     end
   end
-end
