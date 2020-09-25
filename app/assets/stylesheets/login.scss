@@ -1,0 +1,55 @@
+.form-container {
+  background-color: #FFFFFF;
+  display: block;
+  min-height: 100vh;
+  padding: 55px;
+  width: 560px;
+}
+
+.image-container {
+  align-items: center;
+  display: flex;
+  display: -webkit-box;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  width: 100%;
+}
+
+.wrap-image {
+  align-items: stretch;
+  background: #fff;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  overflow: hidden;
+  -webkit-box-align: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  width: 100%;
+}
+
+.side-image {
+  width: calc(100% - 560px);
+  background-image: image-url("login-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    background: rgba(0, 0, 0, 0.1);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}
