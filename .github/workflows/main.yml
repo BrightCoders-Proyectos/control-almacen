@@ -24,6 +24,10 @@ jobs:
       # Runs RubyCritic App
       - name: RubyCritic App
         run: 
-          command: mkdir -p tmp/rubycritic && bundle exec rubycritic --no-browser -p tmp/rubycritic/rubycritic-app -s 95 app config lib
+          command: mkdir -p tmp/rubycritic && bundle exec rubycritic --no-browser -p tmp/rubycritic/rubycritic-app -s 80 app config lib
 
-   
+      # Runs RubyCritic on Tests
+      - name: RubyCritic on Tests
+        run: 
+          command: mkdir -p tmp/rubycritic && bundle exec rubycritic --no-browser -p tmp/rubycritic/rubycritic-app -s 65 spec test
+
