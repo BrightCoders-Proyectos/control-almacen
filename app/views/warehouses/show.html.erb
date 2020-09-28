@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @warehouse.code %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @warehouse.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @warehouse.location %>
+</p>
+
+<%= link_to 'Edit', edit_warehouse_path(@warehouse) %> |
+<%= link_to 'Back', warehouses_path %>
