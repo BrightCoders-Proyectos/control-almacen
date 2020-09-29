@@ -1,0 +1,23 @@
+@charset 'utf-8';
+
+.bg-table {
+  background-color: #435d7d;
+  color: white
+}
+
+.icon {
+  position: relative;
+  vertical-align: middle;
+  top: 0px;
+  left: 0px;
+}
+
+.icon-delete {
+  color: #f6564b; 
+  cursor: pointer;
+}
+
+.icon-edit {
+  color: #ffc72f;
+  cursor: pointer;
+}
