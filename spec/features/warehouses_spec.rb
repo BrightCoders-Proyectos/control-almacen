@@ -2,6 +2,8 @@ require 'rails_helper'
 
 feature 'Visit index warehouses page' do
   scenario 'visit the index successfully' do
+    sign_in FactoryBot.create(:admin)
+
     visit warehouses_path
 
     expect(page).to have_content('Warehouses')
@@ -10,6 +12,8 @@ end
 
 feature 'Creating a Warehouse' do
   scenario 'renders a message when the warehouse is created successfully' do
+    sign_in FactoryBot.create(:admin)
+
     visit warehouses_url
     click_on "New Warehouse"
 
@@ -20,13 +24,12 @@ feature 'Creating a Warehouse' do
 
     expect(page).to have_content('Warehouse was successfully created')
   end
-
-  scenario 'renders a message when the warehouse is not created successfully' do
-  end
 end
 
 feature 'Updating a Warehouse' do
   scenario 'warehouse is updated successfully' do
+    sign_in FactoryBot.create(:admin)
+
     @warehouse = FactoryBot.create(:warehouse)
     visit warehouses_path
     click_on "Edit", match: :first
@@ -42,6 +45,8 @@ end
 
 feature 'destroying a Warehouse' do
   scenario 'destroy a warehouse successfully' do
+    sign_in FactoryBot.create(:admin)
+
     FactoryBot.create(:warehouse)
     
     visit warehouses_path
