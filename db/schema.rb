@@ -10,16 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 2020_09_17_214224) do
-=======
 ActiveRecord::Schema.define(version: 2020_09_25_165046) do
->>>>>>> 8666aae... Add warehouses scaffold
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-<<<<<<< HEAD
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -30,14 +25,14 @@ ActiveRecord::Schema.define(version: 2020_09_25_165046) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_admins_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
-=======
+  end
+
   create_table "warehouses", force: :cascade do |t|
     t.integer "code"
     t.string "name"
     t.string "location"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
->>>>>>> 8666aae... Add warehouses scaffold
   end
 
 end
