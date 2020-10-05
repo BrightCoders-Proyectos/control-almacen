@@ -1,6 +1,6 @@
 class WarehousesController < ApplicationController
   before_action :authenticate_admin!
-  before_action :set_warehouse, only: [:show, :edit, :update, :destroy]
+  before_action :find_warehouse, only: [:show, :edit, :update, :destroy]
 
   # GET /warehouses
   # GET /warehouses.json
@@ -64,7 +64,7 @@ class WarehousesController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_warehouse
+    def find_warehouse
       @warehouse = Warehouse.find(params[:id])
     end
 
