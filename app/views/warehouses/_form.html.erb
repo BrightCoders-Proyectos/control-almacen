@@ -1,15 +1,5 @@
 <%= form_with(model: warehouse, local: true) do |form| %>
-  <% if warehouse.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(warehouse.errors.count, "error") %> prohibited this warehouse from being saved:</h2>
-
-      <ul>
-        <% warehouse.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+  <%= render partial: 'shared/errors', locals: { errors: warehouse.errors } %>
 
   <div class="field">
     <%= form.label :code %>
