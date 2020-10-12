@@ -13,6 +13,13 @@
  *= require bootstrap
  *= require main
  */
- .notice{
-     color:green;
- }
+
+ @import 'main';
+
+.notice{
+  color:green;
+}
+
+body{
+  margin: 0;
+}
