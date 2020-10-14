@@ -25,10 +25,10 @@
         <td><%= warehouse.name %></td>
         <td><%= warehouse.location %></td>
         <td>
-          <%= link_to warehouse, class: "m-3" do %><i class="fas fa-eye"></i><% end %>
-          <%= link_to edit_warehouse_path(warehouse), class: "m-3" do %><i class="far fa-edit"></i><% end %>
+          <%= link_to warehouse, class: "m-3" do %><i class="fas fa-eye outer-space-color"></i><% end %>
+          <%= link_to edit_warehouse_path(warehouse), class: "m-3" do %><i class="far fa-edit outer-space-color"></i><% end %>
           <%= link_to warehouse, class: "m-3", method: :delete, data: { confirm: 'Are you sure?' } do %>
-            <i class="fas fa-trash-alt"></i>
+            <i class="fas fa-trash-alt red-color"></i>
           <% end %>
         </td>
       </tr>
