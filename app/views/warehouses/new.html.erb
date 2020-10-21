@@ -1,5 +1,6 @@
-<h1>New Warehouse</h1>
+<h1 class="container-fluid outer-space-background-color mb-5 background-Warehouses text-center text-white">New Warehouse</h1>
+<div class="container">
+  <%= render 'form', warehouse: @warehouse %>
 
-<%= render 'form', warehouse: @warehouse %>
-
-<%= link_to 'Back', warehouses_path %>
+  <%= link_to 'Back', warehouses_path, class: "btn btn-outline-dark"%>
+</div>

@@ -1,19 +1,19 @@
 <p id="notice"><%= notice %></p>
-
-<p>
+<div class="container border outer-space-background-color pt-4 pb-4">
+<p class="text-white">
   <strong>Code:</strong>
   <%= @warehouse.code %>
 </p>
 
-<p>
+<p class="text-white">
   <strong>Name:</strong>
   <%= @warehouse.name %>
 </p>
 
-<p>
+<p class="text-white">
   <strong>Location:</strong>
   <%= @warehouse.location %>
 </p>
-
-<%= link_to 'Edit', edit_warehouse_path(@warehouse) %> |
-<%= link_to 'Back', warehouses_path %>
+  <%= link_to 'Edit', edit_warehouse_path(@warehouse), class: "btn btn-light"%> |
+  <%= link_to 'Back', warehouses_path, class: "btn btn-light" %>
+</div>

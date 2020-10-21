@@ -1,22 +1,22 @@
-<%= form_with(model: warehouse, local: true) do |form| %>
+<%= form_with(model: warehouse, local: true, class: "container border outer-space-background-color pt-4 pb-4 mb-4") do |form| %>
   <%= render partial: 'shared/errors', locals: { errors: warehouse.errors } %>
 
-  <div class="field">
+  <div class="form-group text-white">
     <%= form.label :code %>
     <%= form.number_field :code %>
   </div>
 
-  <div class="field">
+  <div class="form-group text-white">
     <%= form.label :name %>
     <%= form.text_field :name %>
   </div>
 
-  <div class="field">
+  <div class="form-group text-white">
     <%= form.label :location %>
     <%= form.text_field :location %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-secondary"%>
   </div>
 <% end %>
