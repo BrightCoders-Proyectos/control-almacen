@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <%= stylesheet_link_tag 'homepage', media: 'all', 'data-turbolinks-track': 'reload' %>
     <title>Control Almacen</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,6 +11,33 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-dark navbar-expand bg-dark flex-md-nowrap p-0 shadow">
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <%= link_to("log out", destroy_admin_session_path, method: :delete , class:'nav-link') %>
+        </li>
+        <a class="nav-link text-wrap" href="#">Profile</a>
+      </ul>
+      <a class="navbar-brand col-sm-3 col-md-2 ml-auto" href="#">Warehouse Control</a>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="navbar-homepage">
+          <div class ="sidebar-sticky">
+            <ul class=" nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link text-wrap ">Inicio</a>
+                <a class="nav-link text-wrap ">Usuarios</a>
+                <a class="nav-link ">Empleados</a>
+                <a class="nav-link ">Almacenes</a>
+                <a class="nav-link ">Inventario</a>
+                <a class="nav-link ">Reportes</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
     <% flash.each do |type, msg| %>
       <div class="<%= flash_class(type) %>">
         <%= msg %>
