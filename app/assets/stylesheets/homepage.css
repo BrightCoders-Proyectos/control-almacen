@@ -1,4 +1,4 @@
-.navbar-homepage{
+#navbar-homepage{
     height: 100vh;
     width:200px ;
     background-color: rgb(188, 192, 194);
@@ -31,7 +31,7 @@
   }
 
 @media screen and (max-width: 750px){
-    .navbar-homepage{
+    #navbar-homepage{
         display: none;
     }
 }
